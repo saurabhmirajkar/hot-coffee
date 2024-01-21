@@ -135,10 +135,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="mib-TD-POM">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="kef-1q-14V"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="40K-Mm-HYV"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="kef-1q-14V">
+                            <connections>
+                                <action selector="close" destination="zPA-oG-g8o" id="GRC-1H-zTF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="40K-Mm-HYV">
+                            <connections>
+                                <action selector="save" destination="zPA-oG-g8o" id="ihF-W3-GsE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emailTextField" destination="QEV-OH-1my" id="y5O-7S-J3H"/>
+                        <outlet property="nameTextField" destination="MlJ-LO-iIa" id="44Z-zm-OFF"/>
                         <outlet property="tableView" destination="1Qd-Mp-rwV" id="pgQ-lI-aNa"/>
                     </connections>
                 </viewController>
